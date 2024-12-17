@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -15,7 +15,7 @@
         <div class="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1">
             <div class="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
                 <div>
-                    <img src="./images/chef-cook-high-resolution-logo.png"
+                    <img src="../images/chef-cook-high-resolution-logo.png"
                         class="w-32 mx-auto" />
                 </div>
                 <div class="mt-12 flex flex-col items-center">
@@ -88,9 +88,9 @@
                                 </span>
                             </button>
                             <p class="mt-6 text-lg text-gray-600 text-center">
-                                you already have an account ?
-                                <a href="./pages/signIn.php" class="border-b border-gray-500 border-dotted">
-                                    sign in
+                                you don't have an account ?
+                                <a href="../index.php" class="border-b text-blue-600 border-gray-500 border-dotted">
+                                    sign up 
                                 </a>
                             </p>
                         </form>
@@ -99,7 +99,7 @@
             </div>
             <div class="flex-1 bg-indigo-100 text-center hidden lg:flex">
                 <div class="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat"
-                    style="background-image: url('./images/DALL-E.jpg');">
+                    style="background-image: url('../images/DALL-E.jpg');">
                 </div>
             </div>
         </div>

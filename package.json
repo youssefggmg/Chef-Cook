@@ -1,0 +1,16 @@
+{
+  "name": "chef-cook",
+  "version": "1.0.0",
+  "description": "A web application with multi-role functionality designed for users and chefs (administrators) to enhance culinary booking experiences.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.16"
+  }
+}
