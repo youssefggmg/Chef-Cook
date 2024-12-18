@@ -14,7 +14,9 @@
     <?php
     include "../components/USERheader.html"
     ?>
-
+    <?php
+    include "../components/footer.html"
+    ?>
 </body>
 
 </html>
