@@ -65,10 +65,7 @@
                                 Or sign up with e-mail
                             </div>
                         </div>
-                        <form class="mx-auto max-w-xs">
-                            <input
-                                class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
-                                type="text" placeholder="your Name" name="userName" />
+                        <form method="POST" action="../server/logein.php" class="mx-auto max-w-xs">
                             <input
                                 class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
                                 type="email" placeholder="Email" name="email" />
@@ -94,6 +91,13 @@
                                 </a>
                             </p>
                         </form>
+                        <?php
+                            if (isset($_GET['message'])) {
+                                echo "<div class='bg-red-500 text-white text-sm p-3 rounded'>
+                                            ".$_GET['message'].
+                                        "</div>";
+                            }
+                            ?>
                     </div>
                 </div>
             </div>
