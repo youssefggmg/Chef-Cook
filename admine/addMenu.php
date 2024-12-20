@@ -32,23 +32,20 @@
             <h2 class="text-2xl text-yellow-300 font-semibold">Product or Service Inquiry</h2>
             <p class="text-sm text-gray-300 mt-4 leading-relaxed">you have to add at least one plate and max of 3 plates</p>
 
-            <form>
+            <form id="the_form" >
                 <div class="space-y-4 mt-8">
                     <input type="text" placeholder="menu name"
                         name="menu_name"
                         class="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-300 outline-none" />
                     <input type="file" placeholder="menu image" name="menu_image"
                         class="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-300 outline-none" />
-                        <button class="rounded-full border-red-600 border-4 w-9">
+                        <button class="rounded-full border-red-600 border-4 w-9" id="addPlateBUtton">
                         <i class="fa-solid fa-plus" style="color: #df2a2a;"></i>
                         </button>
                     <div id="new_inputs">
-                        <input type="text" placeholder="plate name" name="plate_name" 
-                        class="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-300 outline-none"/>
-                        <input type="text" placeholder="plate descreption" name="plate_descreption"
-                        class="px-2 py-3 bg-transparent text-gray-200 font-medium w-full text-sm border-b border-gray-400 focus:border-yellow-300 outline-none"/>
                     </div>
                 </div>
+                <div id="error" class="text-red-600 text-sm"></div>
 
 
                 <button type="button"
@@ -67,6 +64,7 @@
     <?php
     include "../components/footer.html";
     ?>
+    <script src="../js/addPlates.js" ></script>
 </body>
 
 </html>
