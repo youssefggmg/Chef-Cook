@@ -11,14 +11,10 @@ if (isset($_POST["email"])) {
 if (isset($_POST["password"])) {
     $password = $_POST["password"];
 }
-echo "1";
 $query = "SELECT userEmail from user where userEmail = ?";
 $stmt = $connection->prepare($query);
-echo "\n 2";
 $stmt->bind_param("s", $email);
-echo "\n 3";
 $stmt->execute();
-echo "\n 4";
 $result = $stmt->get_result();
 
 if ($result->fetch_array() != false) {
@@ -31,7 +27,7 @@ if ($result->fetch_array() != false) {
     $stmt->execute();
     if ($connection->connect_error) {
         echo "some thing went wrong";
-        header("location : ../index.php?erorrmessage" . $connection->connect_error);
+        header("location: ../index.php?erorrmessage" . $connection->connect_error);
     } else {
         $query = "SELECT userID from user where userEmail = ?";
         $stmt = $connection->prepare($query);
@@ -39,7 +35,7 @@ if ($result->fetch_array() != false) {
         $stmt->execute();
         $result = $stmt->get_result();
         $res = $result->fetch_assoc();
-        $userID = $res['userID'];
+        $userID = $res['FK_ROLE_ID'];
         $connection->close();
         setcookie("userID", $userID, time() + 3600, "/");
         if ($res["FK_ROLE_ID"] = 1) {

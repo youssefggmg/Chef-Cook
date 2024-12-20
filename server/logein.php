@@ -23,7 +23,7 @@ elseif ($res["userEmail"]) {
         header("location: ../pages/signIn.php?message=" .urldecode("somthing is not correct try again"));
     }
     elseif (password_verify($password, $userpassword)) {
-        setcookie("userID",$res["userID"],time()+ 3600, "/");
+        setcookie("userID",$res["FK_ROLE_ID"],time()+ 3600, "/");
         if ($res["FK_ROLE_ID"]==1) {
             header("location: ../user/home.php");
         }else{
